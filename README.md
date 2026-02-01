@@ -617,11 +617,3 @@ public class JpaExpenseStorage implements ExpenseStorage {
 
 ---
 
-## Contact / Questions
-
-This project demonstrates production-minded engineering under time constraints. The focus was on:
-- Correctness over features
-- Clarity over cleverness
-- Extension over completeness
-
-Built with intentional trade-offs and clean architecture.
