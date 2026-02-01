@@ -1,0 +1,155 @@
+.expense-list-card {
+  background: white;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.expense-list-card h2 {
+  font-size: 1.3rem;
+  color: #2c3e50;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.controls {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.control-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.control-group label {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #555;
+}
+
+.control-group select {
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-family: inherit;
+}
+
+.control-group select:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.total {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2c3e50;
+  padding: 15px;
+  background: #ecf0f1;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.expense-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.expense-item {
+  display: grid;
+  grid-template-columns: 100px 120px 1fr;
+  gap: 15px;
+  padding: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  align-items: start;
+}
+
+.expense-amount {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #e74c3c;
+}
+
+.expense-category {
+  padding: 4px 12px;
+  background: #3498db;
+  color: white;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  text-align: center;
+  align-self: start;
+}
+
+.expense-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.expense-description {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.expense-date {
+  color: #7f8c8d;
+  font-size: 0.85rem;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px 20px;
+  color: #7f8c8d;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px 20px;
+  color: #7f8c8d;
+}
+
+.error-state {
+  text-align: center;
+  padding: 40px 20px;
+  color: #e74c3c;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .expense-item {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .section-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .controls {
+    flex-direction: column;
+  }
+
+  .control-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .control-group select {
+    width: 100%;
+  }
+}
